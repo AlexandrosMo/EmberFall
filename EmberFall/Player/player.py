@@ -1,6 +1,3 @@
-import sys
-sys.path.insert(1, 'C:/Users/alex-/OneDrive/Υπολογιστής/GO Projects/EmberFall/Classes')
-
 from classes import Character
 
 name = input("Enter your character's name: ")
