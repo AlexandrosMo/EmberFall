@@ -1,13 +1,12 @@
 
 class Character():
      classes = ["Warrior", "Mage", "Rogue", "Ranger", "Paladin", "Occultist", "Berserker"]
-     def __init__(self,class_type,strength, health, defense, weapon, dexterity, mana, magic_power, critical, faith, range):
+     def __init__(self,class_type,strength, health, defense,dexterity, mana, magic_power, critical, faith, range):
         
         self.class_type = class_type
         self.strength = strength
         self.health = health
         self.defense = defense
-        self.weapon = weapon
         self.dexterity = dexterity
         self.mana = mana
         self.magic_power = magic_power
