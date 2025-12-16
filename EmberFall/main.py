@@ -20,18 +20,17 @@ class EmberFallGame():
             print(f"Welcome, {self.player.name}, to the world of EmberFall!")
             start = input("Press Enter to begin your adventure...")
             if start == "":
+                
                 print(f"Welcome, {self.player.name}, to the world of EmberFall!")
                 for c in intro_data:
                         sys.stdout.write(c)
                         sys.stdout.flush()
                         time.sleep(0.05)
                         if c == ".":
-                            sys.stdout.write(c)
-                            sys.stdout.flush()
                             time.sleep(0.05)
                             enter = input("\npress enter to continue or s to skip...")
                             print (enter)
-                            if enter == press("s"):
+                            if enter == "s" or enter == "S":
                                 break
                 print(c)
 
@@ -47,7 +46,7 @@ class EmberFallGame():
                                     print(input("just press enter smh.."))
                                     if start != "enter":
                                         print("Nevermind, Good Luck Stupid!..")
-
+                                        
                     print(f"Welcome, {self.player.name}, to the world of EmberFall!")
 
         else:

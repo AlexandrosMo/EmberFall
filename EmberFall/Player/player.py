@@ -18,7 +18,7 @@ def create_player_interactive():
 
     print(f"Welcome, {name}! Choose your class from the following options:")
     print(Character.classes)
-
+ 
     while True:
         class_type = input("Enter your class: ")
         if class_type in Character.classes:
@@ -28,7 +28,7 @@ def create_player_interactive():
     player = Character(class_type, 0, 0, 0, 0, 0, 0, 0, 0, 0)
     # attach the chosen player name
     player.name = name
-
+    
     print(f"You have chosen the {class_type} class. Good luck on your adventure, {name}!")
     print(f"Stats: Strength={player.strength}, Health={player.health}, Defense={player.defense}, Dexterity={player.dexterity}, Mana={player.mana}, Magic Power={player.magic_power}, Critical={player.critical}, Faith={player.faith}, Range={player.range}")
 
