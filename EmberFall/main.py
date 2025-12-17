@@ -3,6 +3,7 @@ import os
 import yaml
 import time
 
+
 from Player.player import create_player_interactive
 
 # open intro relative to this file so imports or different working directories don't break it
@@ -25,13 +26,9 @@ class EmberFallGame():
                 for c in intro_data:
                         sys.stdout.write(c)
                         sys.stdout.flush()
-                        time.sleep(0.05)
+                        time.sleep(0.06)
                         if c == ".":
-                            time.sleep(0.05)
-                            enter = input("\npress enter to continue or s to skip...")
-                            print (enter)
-                            if enter == "s" or enter == "S":
-                                break
+                            time.sleep(1) 
                 print(c)
 
             else:
